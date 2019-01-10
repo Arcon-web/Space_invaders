@@ -16,13 +16,16 @@ function setupExplosion (explosion) {
 function playerMovement () {
   var maxVelocity = 500;
 
-  if (cursors.left.isDown && player.body.velocity.x > -maxVelocity) {
+  if (leftButton.isDown && player.body.velocity.x > -maxVelocity) {
     // Move to the left
     player.body.velocity.x -= 20;
   }
-  else if (cursors.right.isDown && player.body.velocity.x < maxVelocity) {
+  else if (rightButton.isDown && player.body.velocity.x < maxVelocity) {
     // Move to the right
     player.body.velocity.x += 20;
+  }
+  else if (restartButton.isDown){
+    window.location = "https://platform.arconconsole.be/";
   }
   else {
     // Slow down

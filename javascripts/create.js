@@ -61,6 +61,8 @@ function create () {
 
   // Setup controls
   cursors = game.input.keyboard.createCursorKeys();
-  fireButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+  fireButton = game.input.keyboard.addKey(Phaser.Keyboard.Q);
+  leftButton = game.input.keyboard.addKey(Phaser.Keyboard.W);
+  rightButton = game.input.keyboard.addKey(Phaser.Keyboard.R);
   restartButton = game.input.keyboard.addKey(Phaser.Keyboard.S);
 }
